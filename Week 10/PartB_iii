@@ -1,0 +1,7 @@
+SELECT o.ownerNo, o.fName, o.lName,
+       COUNT(p.propertyNo) AS property_count
+FROM PrivateOwner o
+JOIN PropertyForRent p ON o.ownerNo = p.ownerNo
+GROUP BY o.ownerNo, o.fName, o.lName
+HAVING COUNT(p.propertyNo) >= 2
+ORDER BY property_count DESC;

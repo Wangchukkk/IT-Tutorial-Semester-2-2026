@@ -1,0 +1,4 @@
+SELECT propertyNo, street, city, rent
+FROM PropertyForRent
+WHERE city = 'London'
+ORDER BY rent ASC;

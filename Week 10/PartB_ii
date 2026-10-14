@@ -1,0 +1,4 @@
+SELECT propertyNo, city, rent
+FROM PropertyForRent
+ORDER BY rent DESC
+LIMIT 5;

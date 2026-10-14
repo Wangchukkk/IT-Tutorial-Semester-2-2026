@@ -1,0 +1,8 @@
+SELECT p.propertyNo, p.street, p.city,
+       s.staffNo, s.fName, s.lName,
+       b.branchNo, b.street AS branch_street,
+       b.city AS branch_city
+FROM PropertyForRent p
+LEFT JOIN Staff s ON p.staffNo = s.staffNo
+LEFT JOIN Branch b ON p.branchNo = b.branchNo
+ORDER BY p.propertyNo;

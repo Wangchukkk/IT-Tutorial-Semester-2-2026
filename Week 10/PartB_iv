@@ -1,0 +1,6 @@
+SELECT s.staffNo, s.fName, s.lName,
+       COUNT(r.clientNo) AS clients_registered
+FROM Staff s
+LEFT JOIN Registration r ON s.staffNo = r.staffNo
+GROUP BY s.staffNo, s.fName, s.lName
+ORDER BY clients_registered DESC;

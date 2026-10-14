@@ -1,0 +1,6 @@
+SELECT clientNo, fName, lName, maxRent
+FROM Client
+WHERE maxRent > (
+    SELECT AVG(rent)
+    FROM PropertyForRent )
+ORDER BY maxRent DESC;
