@@ -1,0 +1,7 @@
+if we provide numbers such as 4 and 5, click add, output will display as 9.0
+if we provide numbers such as -3 and 6, click multiply, output will be  -18.0
+if we provide numbers such as -9 and -5, click subtract, output will be -14.0
+if we provide decimal numbers, program should work correctly
+if we keep one entry box empty, program will generate error message
+if we provide "hello" as input entry box, program will generate error meesage
+
